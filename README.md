@@ -1,2 +1,2 @@
 # calculator
-Final project for the 
+Final project for The Odin Project's Foundations course
