@@ -1,0 +1,72 @@
+p {
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 75px;
+    text-align: right;
+    padding-top: 25px;
+    padding-right: 20px;
+    color: rgb(0, 0, 0);
+}
+button {
+    font-family: 'Lato', sans-serif;
+    font-size: 35px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgb(202, 202, 202);
+    transition-duration: 0.2s;
+    box-shadow: 0 5px rgb(173, 173, 173);
+}
+button:hover {
+    background-color: white;
+    color: black;
+}
+button:active {
+    box-shadow: 0 5px rgb(214, 214, 214);
+    transform: translateY(4px);
+}
+.wrapper {
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(6, 100px);
+    display: grid;
+    grid-gap: 15px;
+}
+#box1 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+.navigator {
+    background-color: rgb(194, 177, 255);
+    color: rgb(0, 0, 0);
+}
+.operator {
+    background-color: rgb(255, 231, 123);
+}
+.operatorClicked {
+    box-shadow: 0 5px rgb(214, 214, 214);
+    transform: translateY(4px);
+}
+#box18 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    border-radius: 60px;
+    text-align: left;
+    padding-left: 40px;
+}
+#box20 {
+    background-color: rgb(128, 253, 201);
+    color: black;
+}
+#box20:hover {
+    background-color: white;
+    color: black;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: auto;
+    min-height: 100vh;
+    background-color: rgb(228, 228, 228);
+}  
