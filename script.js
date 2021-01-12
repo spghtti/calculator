@@ -103,8 +103,16 @@ buttons.forEach((button) => {
 			newDisplay = (display + '' + button.value);
 			document.querySelector('#box1').textContent += newDisplay;
 
+		} else if (equalsPressed === 1 && button.className === 'operator') {
+			let x = 0;
+			console.log('2')
+			oldEntry = parseFloat(document.querySelector('#box1').textContent);
+			equalsPressed = 0
+			newDisplay = (display + '' + button.value);
+			document.querySelector('#box1').textContent += newDisplay;
+
 		} else if (equalsPressed === 1) {
-			console.log('2');
+			console.log('3');
 			oldEntry = parseFloat(document.querySelector('#box1').textContent);
 			clear();
 			equalsPressed = 0
@@ -132,6 +140,7 @@ back.addEventListener('click', () => {
 
 let total = 0;
 let oldEntry = 0;
+
 
 let add = document.querySelector('#box17');
 add.addEventListener('click', () => {
@@ -237,7 +246,7 @@ equals.addEventListener('click', () => {
 		document.querySelector('#box1').textContent = operate(operator, entry[0], entry[1]);
 	}
 	equalsPressed = 1;
-	//operatorPressed = 0;
+	operatorPressed = 0;
 });
 
 let periodButton = document.querySelector('#box19');
@@ -250,7 +259,3 @@ periodButton.addEventListener('click', () => {
 		periodButton.disabled = false;
 	};
 });
-
-
-//let keyTarget = document.querySelectorAll('button');
-//window.addEventListener('keyup', pressKey);
